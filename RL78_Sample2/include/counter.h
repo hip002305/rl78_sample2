@@ -100,18 +100,27 @@ Macro definitions
 /*******************************************************************************
 ** BCNT_PROC	
 ********************************************************************************/
-#define	BCNT_PROC(max, mr, cp0, cp1, O0, O1, O2, O3)							\
-{																				\
-		UCHAR ucret;															\
-		ucret = BCNT_Evaluate(mr, cp0, cp1, max);								\
+#define	BCNT_PROC(max, mr, cp0, cp1, O0, O1, O2, O3, flag, roop_flag)									\
+{																	\
+		UCHAR ucret;														\
+		ucret = BCNT_Evaluate(mr, cp0, cp1, max);										\
+		if(ucret >= max)													\
+		{															\
+			roop_flag = 1;													\
+		}															\
+		if (roop_flag == 1) { 													\
+			if (ucret == 0){												\
+				flag = 1;												\
+			}														\
+		}															\
 		O0 = (ucret & 0x01);													\
-		ucret >>= 1;															\
+		ucret >>= 1;														\
 		O1 = (ucret & 0x01);													\
-		ucret >>= 1;															\
+		ucret >>= 1;														\
 		O2 = (ucret & 0x01);													\
-		ucret >>= 1;															\
+		ucret >>= 1;														\
 		O3 = (ucret & 0x01);													\
-		BCNT_Counter();															\
+		BCNT_Counter();														\
 }
 
 /*******************************************************************************

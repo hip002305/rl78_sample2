@@ -1,13 +1,13 @@
 品質記録情報
-2024年6月18日 10:43:24
+2024年6月26日 9:57:35
 
 ------ ビルド開始(RL78_Sample2, DefaultBuild) ------
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\main.c src\common.c src\timer.c src\int.c src\port.c src\watchdogtimer.c src\system.c src\systeminit.c src\panel.c src\digitalio.c src\counter.c src\74hc.c -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
-W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り54日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
+W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り46日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\cstart.asm src\opt_byte.asm -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -c -msg_lang=japanese
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -subcommand=DefaultBuild\RL78_Sample2.clnk
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 54 days. After that, functional limit will be applied. Please consider purchasing the product.
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 54 days. After that, functional limit will be applied. Please consider purchasing the product.
+W0561018:The evaluation period of CC-RL V1 is valid for the remaining 46 days. After that, functional limit will be applied. Please consider purchasing the product.
+W0561018:The evaluation period of CC-RL V1 is valid for the remaining 46 days. After that, functional limit will be applied. Please consider purchasing the product.
 Renesas Optimizing Linker Completed
 ------ ビルド終了(エラー:0個, 警告:3個)(RL78_Sample2, DefaultBuild) ------
 
@@ -54,8 +54,8 @@ DefaultBuild\RL78_Sample2.clnk :
 
 
 --- SHA1 hash value of output files ---
-C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: fa3dcd05db326273ec87994578349dc4b66bd16a
-C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 3ade221772cea4997d456ba98de2a3e428db7c6b
+C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_sample2_local\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: b082f9209c436941e0513236cadabaf1ac0971d5
+C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_sample2_local\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: de714266191abcb5020cc6056b249eeb55acbd96
 
 
 --- システム情報 ---
@@ -81,13 +81,13 @@ C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_Sample2\DefaultBuild\
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  268 MB
+  311 MB
  *GDIオブジェクト数
-  2071
+  2175
  *USERオブジェクト数
-  1357
+  1251
  *開いているファイル
-  0 editors, 0 files, 0 KB
+  10 editors, 10 files, 100 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン
@@ -223,7 +223,7 @@ IronPythonコンソール・プラグイン(-)
   DeviceInformation.dll
 
 --- メイン・プロジェクト情報 ---
-C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_Sample2\RL78_Sample2.mtpj
+C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_sample2_local\RL78_Sample2\RL78_Sample2.mtpj
 マイクロコントローラ情報
  *R5F1058A
   *ファイル名: バージョン
@@ -243,6 +243,8 @@ C:\Users\y_miyakubo\Desktop\研修\組み込み実習\RL78_Sample2\RL78_Sample2.
   
  * SMS Assemblerのバージョン
    V1.00.00.01 [29 May 2020]
+ * GREEN_DSP Structured Assembler のバージョン
+   V1.04.02
  
 
 デバッグ・ツール情報
