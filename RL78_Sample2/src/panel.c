@@ -96,4 +96,7 @@ void panel(void)
 	if (dotflag == 1) {
 		DGOUT_PROC( 54, fON, HIGH );
 	}
+	else if (dotflag == 0) {
+		DGOUT_PROC( 54, fOFF, HIGH );
+	}
 }
