@@ -253,7 +253,11 @@ UCHAR BCNT_Evaluate( UCHAR mr, UCHAR cp0, UCHAR cp1, UCHAR max )
 	ByteMemSet(g_ucBCNT_LastCounterVal, g_ucBCNT_Count, count);
 	
 	/* (Count value of binary counter) is returned. */
-	return count;
+	if (count == 0) {
+		return count;
+	} else {
+		return ((max + 1) - count);	
+	}
 }
 
 /*******************************************************************************
